@@ -1,0 +1,116 @@
+.select{
+    background-color: rgba(149, 134, 239, 0.2);
+    backdrop-filter: blur(6px);
+    margin-top: 40px;
+    width: 180px;
+    overflow-x: hidden;
+    position: absolute;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.4s;
+}
+.select_out{
+    overflow-x: hidden;
+}
+.selectS{
+    background-color: rgba(121, 108, 255, 0.07);
+    backdrop-filter: blur(2px);
+    margin-left: 180px;
+    margin-top: 5px;
+    width: 200px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.4s;
+}
+.select_content{
+    overflow-y: auto;
+    max-height: 610px;
+    overflow-x: hidden;
+
+}
+.select_content::-webkit-scrollbar {
+    width: 12px;
+    display:none;
+}
+.select_content::-webkit-scrollbar-track {
+    background: #dddaff;
+    /*box-shadow: inset 2px 2px 8px 0 rgba(99, 168, 255, 0.45), -1px -1px 8px 0 rgba(238, 246, 255, 0.45);*/
+    border-radius: 20px;
+}
+.select_content::-webkit-scrollbar-thumb {
+    background-color: #7970ff;
+    border-radius: 20px;
+}
+.text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.curr{
+    width:140px;
+    height: 50px;
+    border-radius: 10px 0px 0px 10px;
+    float: left;
+    display: grid;
+
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition:background-color 0.4s, border-color 0.4s;
+}
+.svg{
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    transition: transform 0.3s;
+}
+.cls{
+    fill: rgba(255, 255, 255, 0);
+    stroke: #526aa5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:670px;
+}
+.curr_out{
+    float: left;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(206, 215, 255);
+    width: max-content;
+    height: 50px;
+    z-index: 1;
+    transition: background-color 0.4s, color 0.5s;
+}
+.curr_out:hover{
+    background-color: rgb(201, 211, 255);
+}
+.key_text{
+    font-family:Nunito;
+    color: #406375;
+    font-size: 16px;
+    margin: 0px 0px 0px 10px;
+}
+.text{
+    font-family:Nunito;
+    color: #2b4a9a;
+    font-size: 17px;
+    margin: 0px 0px 0px 10px;
+}
+.line{
+    cursor: pointer;
+    padding-bottom: 7px;
+    padding-top: 7px;
+
+    transition: background-color 0.4s;
+    background-color: rgba(255, 255, 255, 0);
+}
+.line:hover{
+    background-color: rgba(201, 203, 255, 0.49);
+}

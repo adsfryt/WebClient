@@ -1,0 +1,13 @@
+.Main{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.svg{
+    transition: fill 0.4s;
+}
+.svg:hover{
+     fill: #ff0000;
+ }

@@ -1,0 +1,66 @@
+.Main{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Main_in{
+    width: 60%;
+    height: calc(100vh - 80px);
+    overflow: auto;
+    min-width: 700px;
+    max-width: 1100px;
+    position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.Main_in::-webkit-scrollbar {
+    display: none;
+}
+.TextH{
+    font-family: Ubuntu-Medium;
+    color: #6e6eac;
+    text-align: center;
+    margin: 0;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.TextH1{
+    font-family: Ubuntu-Medium;
+    color: #797b7c;
+    margin: 0;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.TextH1R{
+    font-family: Ubuntu-Medium;
+    color: #e65454;
+    margin: 0;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.error{
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    position: fixed;
+    background-color: rgba(255, 1, 1, 0.39);
+    backdrop-filter: blur(6px);
+    z-index: 5;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.errorText{
+    font-family: Nunito;
+    color: #ffffff;
+    margin: 0;
+    font-size: 15px;
+
+}

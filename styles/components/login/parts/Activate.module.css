@@ -1,0 +1,10 @@
+.Main{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+}
+.List{
+    margin-top: 10px;
+}

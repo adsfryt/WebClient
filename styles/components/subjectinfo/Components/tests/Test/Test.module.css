@@ -1,0 +1,63 @@
+.Main{
+    padding: 10px;
+}
+.Main_out{
+    overflow: hidden;
+    border-radius: 8px;
+    margin:auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    transition: box-shadow 0.2s;
+}
+
+@keyframes chgColor {
+    0%{
+        --c1: #080ca6;
+        --c2: #6c3398;
+    }
+    33%{
+        --c2: #7b27b5;
+        --c1: #101ad1;
+    }
+    66%{
+        --c2: #5421ba;
+        --c1:  #77399f;
+    }
+    100%{
+        --c1: #080ca6;
+        --c2: #6c3398;
+    }
+}
+@property --c1 {
+    syntax: '<color>';
+    initial-value: #4c50ff;
+    inherits: false;
+}
+
+@property --c2 {
+    syntax: '<color>';
+    initial-value: #a35bff;
+    inherits: false;
+}
+.top{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 25px;
+    background: linear-gradient(135deg, var(--c1) ,  var(--c2));
+    animation: chgColor 8s infinite;
+}
+.Main_out:hover{
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(143,131,219,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(143,131,219,1);
+    box-shadow: 0px 0px 10px 0px rgba(143,131,219,1);
+}
+.razd{
+    width: 80%;
+    height: 3px;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(136, 136, 184, 0.7);
+}

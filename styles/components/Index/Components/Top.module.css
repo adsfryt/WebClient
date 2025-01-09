@@ -1,0 +1,38 @@
+.Main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Text{
+    font-family: Ubuntu-Medium;
+    color: #4a4a83;
+    text-align: center;
+    margin: 0;
+    font-size: 21px;
+    transition: color 0.4s ;
+}
+
+.Button{
+width: max-content;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 3px 7px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.4s ;
+}
+
+
+.Button:hover{
+    background-color: #7777b1;
+}
+
+.Button:hover .Text{
+    color: #ffffff;
+}

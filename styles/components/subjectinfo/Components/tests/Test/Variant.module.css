@@ -1,0 +1,25 @@
+.Main{
+    display: grid;
+    width: max-content;
+    grid-template-columns: 430px 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.Main_out{
+    display: grid;
+    width: max-content;
+    grid-template-rows: 1fr 2fr;
+}
+.CheckBox_out{
+    height: 40px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.text{
+    font-size: 17px;
+    margin: 0;
+    font-family: Nunito;
+    color: #4a4a83;
+    margin-right: 20px;
+}

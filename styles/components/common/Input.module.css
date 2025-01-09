@@ -1,0 +1,96 @@
+.Main{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.Input{
+    position: relative;
+    width: 275px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: solid;
+    padding-left: 5px;
+    border-width: 2px;
+    border-color: #4a4a83;
+    font-size: 17px;
+    font-family: Nunito;
+    color: rgba(68, 68, 131, 0.7);
+}
+.Input_width{
+    width: 400px;
+}
+
+.Label{
+    position:absolute;
+    font-family: Nunito;
+    color: rgba(108, 108, 136, 0.7);
+    pointer-events: none;
+    font-size: 18px;
+    margin-top:8px;
+    background-color: white;
+    transform: translateX(-276px);
+    padding-left: 3px;
+    padding-right: 3px;
+    transition: transform 0.13s linear, font-size 0.13s linear;
+}
+
+.Label_width{
+    position:absolute;
+    width: max-content;
+    font-family: Nunito;
+    color: rgba(108, 108, 136, 0.7);
+    pointer-events: none;
+    font-size: 18px;
+    margin-top:8px;
+    background-color: white;
+    transform: translateX(-400px);
+    padding-left: 3px;
+    padding-right: 3px;
+    transition: transform 0.13s linear, font-size 0.13s linear;
+}
+.Main input:focus~.Label_width,
+.Main input:valid~.Label_width{
+    transform: translateY(-18px) translateX(-400px);
+    font-size: 13px;
+}
+
+.Main input:focus~.Label,
+.Main input:valid~.Label{
+    transform: translateY(-18px) translateX(-276px);
+    font-size: 13px;
+}
+
+.ShowText_Label{
+     position:absolute;
+     font-family: Nunito;
+     color: rgba(108, 108, 136, 0.7);
+     pointer-events: none;
+     margin-top:6px;
+     background-color: #e2eef4;
+     padding-left: 3px;
+     padding-right: 3px;
+     border-radius: 4px;
+     transition: transform 0.13s linear, font-size 0.13s linear;
+    transform: translateY(-53px) translateX(10px);
+    font-size: 13px;
+ }
+.ShowText_Input{
+    position: relative;
+    width: 275px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: solid;
+    padding-left: 5px;
+    border-width: 2px;
+    border-color: #e2eef4;
+    font-size: 17px;
+    font-family: Nunito;
+    background-color:  #e2eef4;
+    color: rgba(69, 69, 168, 0.7);
+}
+.ShowText_Text{
+    margin-top: 7px;
+}

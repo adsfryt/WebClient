@@ -1,0 +1,17 @@
+.Main{
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    overflow:hidden;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.4s;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.Main:hover{
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(143,131,219,1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(143,131,219,1);
+    box-shadow: 0px 0px 16px 0px rgba(143,131,219,1);
+}

@@ -1,0 +1,79 @@
+.Main{
+    width: calc( 100% - 40px);
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+    overflow: hidden;
+    transition: box-shadow 0.4s
+}
+.Main:hover{
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(143,131,219,1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(143,131,219,1);
+    box-shadow: 0px 0px 16px 0px rgba(143,131,219,1);
+}
+@keyframes chgColor {
+    0%{
+        --c1: #4c50ff;
+        --c2: #a35bff;
+    }
+    33%{
+        --c2: #702df3;
+        --c1: #5b84cf;
+    }
+    66%{
+        --c2: #aa7be3;
+        --c1: #5980cf;
+    }
+    100%{
+        --c1: #4c50ff;
+        --c2: #a35bff;
+    }
+}
+@property --c1 {
+    syntax: '<color>';
+    initial-value: #4c50ff;
+    inherits: false;
+}
+
+@property --c2 {
+    syntax: '<color>';
+    initial-value: #a35bff;
+    inherits: false;
+}
+.top{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 25px;
+    background: linear-gradient(135deg, var(--c1) ,  var(--c2));
+    animation: chgColor 8s infinite;
+}
+.title{
+    font-family: Ubuntu-Medium;
+    font-size: 24px;
+    margin-left: 10px;
+    color: #4a4a83;
+    max-height: 30px;
+    overflow: hidden;
+}
+.razd{
+    width: 80%;
+    height: 2px;
+    border-radius: 1px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #4a4a83;
+}
+.description{
+    font-family: Nunito;
+    color: rgba(81, 81, 103, 0.84);
+    font-size: 15px;
+    max-height: 105px;
+    margin-left: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+}

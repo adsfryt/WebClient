@@ -1,0 +1,146 @@
+@property --c1 {
+    syntax: '<color>';
+    initial-value: #4c50ff;
+    inherits: false;
+}
+
+@property --c2 {
+    syntax: '<color>';
+    initial-value: #a35bff;
+    inherits: false;
+}
+
+.Main{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--c1) ,  var(--c2));
+    animation: chgColor 8s infinite;
+}
+@keyframes chgColor {
+    0%{
+        --c1: #4c50ff;
+        --c2: #a35bff;
+    }
+    33%{
+        --c2: #702df3;
+        --c1: #5b84cf;
+    }
+    66%{
+        --c2: #aa7be3;
+        --c1: #5980cf;
+    }
+    100%{
+        --c1: #4c50ff;
+        --c2: #a35bff;
+    }
+}
+.List{
+    width: 70%;
+    height: 70%;
+    max-height: 800px;
+    max-width: 1200px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.List_inner{
+    width: 100%;
+    height: min-content;
+    max-width: 500px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.List_in{
+    width: 70%;
+    justify-items: center;
+}
+.Button{
+    width: 140px;
+    height: 60px;
+    min-width: 110px;
+    min-height: 60px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid;
+    border-color: #c6c6c6;
+    border-width: 3px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Text{
+    font-family: Ubuntu-Medium;
+    font-size: 19px;
+    margin: 0;
+    text-align: center;
+    color: #4a4a83;
+}
+.TextH{
+    font-family: Ubuntu-Medium;
+    color: #4a4a83;
+    text-align: center;
+    margin: 0;
+    font-size: 21px;
+}
+.TextO{
+    font-family: Ubuntu-Medium;
+    color: #797b7c;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.ButtonF{
+    width: 140px;
+    height: 60px;
+    min-width: 110px;
+    min-height: 60px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid;
+    border-color: #c6c6c6;
+    border-width: 3px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Image{
+    width: 80%;
+    height: auto;
+}
+.Code_Main {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .List_inner{
+        width: 100%;
+        height: min-content;
+        max-width: 500px;
+        justify-items: center;
+        display: block;
+    }
+    .Button{
+        margin-top: 20px;
+    }
+    .ButtonF{
+        margin-top: 20px;
+    }
+}

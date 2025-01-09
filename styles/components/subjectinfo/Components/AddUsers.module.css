@@ -1,0 +1,63 @@
+.Main{
+    width: 100%;
+    margin-bottom:10px;
+    overflow: hidden;
+}
+.Block{
+    width: max-content;
+    color: #eff5f5;
+    font-family: Nunito;
+    font-size: 16px;
+    cursor: pointer;
+}
+.cross{
+    width: 25px;
+}
+.Block_out{
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    margin-left: 10px;
+    width: max-content;
+    padding-bottom: 6px;
+    background-color: #7b94c8;
+    border-radius: 5px;
+    float: left;
+    display: grid;
+    margin-top:5px;
+    grid-template-columns: 1fr 10px 25px;
+    align-items: center;
+    justify-content: center;
+}
+.Block_out_main{
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    margin-left: 10px;
+    width: max-content;
+    padding-bottom: 6px;
+    background-color: #b38ad8;
+    border-radius: 5px;
+    float: left;
+    display: grid;
+    margin-top:5px;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.Block_out_cross{
+    float: left;
+    width: max-content;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    margin-left: 10px;
+    margin-top:5px;
+    padding-bottom: 6px;
+    background-color: #7b94c8;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}

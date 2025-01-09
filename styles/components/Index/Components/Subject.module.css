@@ -1,0 +1,104 @@
+.Main{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Main_in{
+    width: 60%;
+    height: calc(100vh - 80px);
+    overflow: auto;
+    min-width: 700px;
+    max-width: 1100px;
+    position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    cursor: pointer;
+}
+.List{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.desc_text{
+    color: #ffffff;
+    margin: 0;
+    font-size: 23px;
+    font-family: Nunito,cursive;
+    text-align: center;
+}
+.row_desc{
+    width:100%;
+    padding-top: 10px;
+    margin-top: 20px;
+    background-color: #4a4a83;
+    border-radius: 8px;
+    height: max-content;
+}
+.textarea{
+    width: calc(100% - 12px);
+    resize: none;
+    margin-top: 10px;
+    outline: none;
+    margin-left: 2px;
+    padding-right: 0px;
+    padding-left: 8px;
+    padding-bottom: 0px;
+    border:none;
+    height: 240px;
+    border-radius: 0px 0px 6px 6px;
+    font-size: 17px;
+    font-family: Nunito,cursive;
+    color: #4a4a83;
+    margin-bottom: -2px;
+    transition: box-shadow 0.8s;
+}
+.textarea:focus{
+    box-shadow: 0px 0px 10px 0px rgba(158, 177, 239, 0.75);
+}
+
+.add_text{
+    margin: 15px;
+    color:#7a93c6;
+    transition: color 0.5s;
+    font-size: 21px;
+    font-family: Ubuntu-Medium, cursive;
+}
+.add{
+    width: max-content;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: solid 3px #7a93c6;
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content:center;
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+.add_test:hover{
+    background-color:#7a93c6;
+}
+.add_test:hover .add_text{
+    color: #ffffff;
+}
+.add:hover{
+    background-color: #7a93c6;
+}
+.add:hover .add_text{
+    color: #ffffff;
+}
+
+.title{
+    font-family: Nunito;
+    color: rgba(132, 132, 204, 0.84);
+    font-size: 21px;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-bottom: 7px;
+}
